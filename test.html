@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abstainers League - Promoting morality, discipline, and cultural heritage among youths.">
+  <title>Abstainers League - Home</title>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+  <style>
+    /* Additional custom styles */
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    .team-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-icon:hover {
+      color: #FF5733;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Main Section -->
+  <div class="bg-gray-50 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+      <div class="mx-auto max-w-2xl">
+        <h1 class="text-4xl font-extrabold tracking-tight text-orange-600 sm:text-5xl">
+          Meet our Dedicated Team
+        </h1>
+        <p class="mt-4 text-xl leading-8 text-gray-900">
+          We are a committed team of mentors, educators, and advocates united by a shared passion for youth transformation.
+        </p>
+      </div>
+
+      <!-- Founder Section -->
+      <div class="flex justify-center">
+        <div class="team-card max-w-lg mt-20 rounded-2xl bg-gradient-to-b from-orange-500 via-orange-50 to-blue-50 p-10">
+          <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56 hover:scale-105 transition-transform" src="images/nathan.jpg" alt="Nathan Zaria">
+          <h3 class="mt-6 text-2xl font-bold leading-7 tracking-tight text-gray-800">Nathan Zaria</h3>
+          <p class="text-sm leading-6 text-gray-600">Founder/Executive Director</p>
+          <p class="mt-4 text-sm leading-6 text-gray-500">
+            Nathan Zaria leads the organization with a focus on youth development, social impact, and community transformation.
+          </p>
+          <ul role="list" class="mt-6 flex justify-center gap-x-6">
+            <li>
+              <a href="#" class="social-icon text-gray-400 hover:text-orange-500">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-icon text-gray-400 hover:text-orange-500">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Team Members Section -->
+      <ul role="list" class="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+        <!-- Member 1 -->
+        <li class="team-card rounded-2xl bg-gradient-to-b from-orange-500 via-orange-50 to-blue-50 p-10">
+          <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56 hover:scale-105 transition-transform" src="images/aver.jpg" alt="Aver Gabriel">
+          <h3 class="mt-6 text-xl font-bold leading-7 tracking-tight text-gray-800">Aver Gabriel</h3>
+          <p class="text-sm leading-6 text-gray-600">Director of Programmes</p>
+        </li>
+
+        <!-- Member 2 -->
+        <li class="team-card rounded-2xl bg-gradient-to-b from-orange-500 via-orange-50 to-blue-50 p-10">
+          <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56 hover:scale-105 transition-transform" src="images/iorlumun.jpg" alt="Iorlumun B. Ibu">
+          <h3 class="mt-6 text-xl font-bold leading-7 tracking-tight text-gray-800">Iorlumun B. Ibu</h3>
+          <p class="text-sm leading-6 text-gray-600">Director of Human Resource</p>
+        </li>
+
+        <!-- Member 3 -->
+        <li class="team-card rounded-2xl bg-gradient-to-b from-orange-500 via-orange-50 to-blue-50 p-10">
+          <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56 hover:scale-105 transition-transform" src="images/peace.jpg" alt="Peace E. Otsonu">
+          <h3 class="mt-6 text-xl font-bold leading-7 tracking-tight text-gray-800">Peace E. Otsonu</h3>
+          <p class="text-sm leading-6 text-gray-600">Gender Focal Person</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
