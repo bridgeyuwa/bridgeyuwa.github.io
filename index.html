@@ -7,6 +7,11 @@
 
     <title> | Abstainers&#039; League</title>
 
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
@@ -26,7 +31,7 @@
             <div class="flex">
                 <div class="flex flex-shrink-0 items-center">
                     <!-- logo -->
-                    <img class="h-8 w-auto" src="your-logo-navy.svg" alt="ABSTL">                </div>
+                    <img class="h-8 w-auto" src="favicon-32x32.png" alt="Abstainers' League logo">                </div>
                 <!-- Desktop menu-->
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
     <!-- Current page has navy underline, others have orange hover -->
@@ -90,6 +95,10 @@
 </nav>
     <!-- Hero Section-->
     <div x-data="heroCarousel" class="relative isolate overflow-hidden border-t-2 border-white ">
+        <div class="absolute top-4 left-1/2 transform -translate-x-1/2 z-20">
+            <img src="logo.png" alt="Logo" class="h-32 w-auto rounded-lg">
+        </div>
+
         <div class="absolute inset-0 -z-10 h-full w-full">
             <template x-for="(image, index) in images" :key="index">
                 <div
@@ -109,20 +118,14 @@
                 style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
             </div>
         </div>
-        <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:py-32">
+        <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:py-32 mt-24 sm:mt-16  lg:mt-10 ">
             <div class="text-center">
                 <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Abstainers' League</h1>
                 <p class="mt-6 text-lg leading-8 text-orange-100">Building a Society of Morality and
                     Discipline. <br> Empowering youths through programs, outreach, and cultural
                     heritage.</p>
 
-                <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#"
-                        class="rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400">Get
-                        started</a>
-                    <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span
-                            aria-hidden="true">→</span></a>
-                </div>
+
             </div>
         </div>
         <div
@@ -184,6 +187,13 @@
                             with schools, religious institutions, and community organizations, we deliver programs that emphasize
                             abstinence, ethical behavior, civic responsibility, and the preservation of heritage. We are nurturing a
                             generation ready to lead with integrity and honor.</p>
+
+                    
+                        <div class="mt-10 flex items-center justify-center gap-x-6">
+                            <a href="#" class="rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400">Learn more....</a>
+                            <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
+                        </div>
+
                     </div>
 
                     <div class="flex flex-auto justify-center">
@@ -320,7 +330,7 @@
     </section>
 
     <!-- Footer -->
-    
+
 
 
     <script>
