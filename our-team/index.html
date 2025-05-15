@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laravel</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+
+    <!-- Styles / Scripts -->
+    <script type="module" src="http://[::1]:5173/@vite/client"></script><link rel="stylesheet" href="http://[::1]:5173/resources/css/app.css" /><script type="module" src="http://[::1]:5173/resources/js/app.js"></script>    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <nav x-data="{ open: false }" class="sticky top-0 z-50 bg-white shadow">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 justify-between">
+            <div class="flex">
+                <div class="flex flex-shrink-0 items-center">
+                    <!-- logo -->
+                    <img class="h-8 w-auto" src="your-logo-navy.svg" alt="ABSTL">                </div>
+                <!-- Desktop menu-->
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+    <!-- Current page has navy underline, others have orange hover -->
+    <a href="http://nathan.test"
+        class="inline-flex items-center border-b-2 border-blue-800 px-1 pt-1 text-sm font-medium text-navy-800">Home</a>
+    <a href="http://nathan.test/about"
+        class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-orange-500 hover:text-orange-600">About
+    </a>
+   
+    <a href="http://nathan.test/our-team"
+        class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-orange-500 hover:text-orange-600">Our
+        Team</a>
+    <a href="http://nathan.test/faq"
+        class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-orange-500 hover:text-orange-600">FAQ</a>
+    <a href="http://nathan.test/contact"
+        class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-orange-500 hover:text-orange-600">Contact
+        Us</a>
+</div>
+
+            </div>
+
+            <div class="-mr-2 flex items-center sm:hidden">
+                <!-- Mobile menu button -->
+                <button @click="open = !open" type="button"
+                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                    aria-controls="mobile-menu" :aria-expanded="open.toString()">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <svg x-show="!open" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg x-show="open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div x-show="open" @click.away="open = false" class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 pb-3 pt-2">
+    <!-- Current: "bg-orange-50 border-orange-500 text-orange-700", Default: "border-transparent text-gray-700 hover:bg-gray-50 hover:border-orange-300 hover:text-orange-600" -->
+    <a href="http://nathan.test"
+        class="block border-l-4 border-orange-500 bg-orange-50 py-2 pl-3 pr-4 text-base font-medium text-orange-700">Home</a>
+    <a href="http://nathan.test/about"
+        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-700 hover:border-orange-300 hover:bg-orange-50 hover:text-orange-600">About
+        Us</a>
+    <a href="http://nathan.test/our-team"
+        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-700 hover:border-orange-300 hover:bg-orange-50 hover:text-orange-600">Our
+        Team</a>
+    <a href="http://nathan.test/faq"
+        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-700 hover:border-orange-300 hover:bg-orange-50 hover:text-orange-600">FAQ
+    </a>
+    <a href="http://nathan.test/contact"
+        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-700 hover:border-orange-300 hover:bg-orange-50 hover:text-orange-600">Contact Us</a>
+</div>    </div>
+</nav>
+    <div class="relative py-24 sm:py-32 bg-cover bg-center flex items-center justify-center text-white" title="Meet our team" background="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+     style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2830&amp;q=80&amp;blend=111827&amp;sat=-100&amp;exp=15&amp;blend-mode=multiply');">
+    <!-- Overlay for making the background darker -->
+    <div class="absolute inset-0 bg-black opacity-10"></div>
+
+
+    <div class="z-10 mx-auto max-w-7xl px-6 text-center lg:px-8">
+        <div class="mx-auto max-w-2xl">
+            <h1 class="text-4xl font-bold tracking-tight text-orange-600 sm:text-6xl">
+                Meet our team
+            </h1>
+            <p class="mt-4 text-lg leading-8 text-orange-100">
+                We are a committed team of mentors, educators, and advocates united by a shared passion for youth transformation. Guided by purpose, we promote abstinence, morality, and discipline across communities.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+    <div class="pb-24 sm:pb-32 ">
+        <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+           
+            <!-- Founder/ED-->
+            <div class="flex justify-center">
+                <div class="max-w-lg mt-20 rounded-2xl bg-gradient-to-b from-orange-500 via-orange-50 to-blue-50 px-8 py-10">
+                    <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src="images/nathan.jpg" alt="">
+                    <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight">Nathan Zaria</h3>
+                    <p class="text-sm leading-6 text-gray-600">Founder/Executive Director</p>
+                    <p class="text-sm leading-6 text-gray-400">Nathan Zaria leads the organization with a focus on youth
+                        development, social impact, and community transformation. His vision drives innovative programs that promote
+                        discipline, purpose, and positive change across Nigeria.</p>
+                    <ul role="list" class="mt-6 flex justify-center gap-x-6">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-gray-300">
+                                <span class="sr-only">X</span>
+                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path
+                                        d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-gray-300">
+                                <span class="sr-only">LinkedIn</span>
+                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Others -->
+            <ul role="list"
+                class="mx-auto mt-6 lg:mt-8 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+                <li class="rounded-2xl bg-gradient-to-b from-orange-500 via-orange-50 to-blue-50 px-8 py-10">
+                    <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src="images/aver.jpg" alt="">
+                    <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight">Aver Gabriel</h3>
+                    <p class="text-sm leading-6 text-gray-600">Director of Programmes</p>
+
+                </li>
+
+                <li class="rounded-2xl bg-gradient-to-b from-orange-500 via-orange-50 to-blue-50 px-8 py-10">
+                    <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src="images/iorlumun.jpg" alt="">
+                    <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight">lorlumun B. Ibu</h3>
+                    <p class="text-sm leading-6 text-gray-600">Director of Human Resource</p>
+
+                </li>
+
+                <li class="rounded-2xl bg-gradient-to-b from-orange-500 via-orange-50 to-blue-50 px-8 py-10">
+                    <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src="images/peace.jpg" alt="">
+                    <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight">Peace E. Otsonu</h3>
+                    <p class="text-sm leading-6 text-gray-600">Gender Focal Person</p>
+
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 Abstainers League. All rights reserved.</p>
+        <p>Designed by <a href="" class="text-orange-400 hover:text-orange-300">Bridges Yuwa</a></p>
+    </div>
+</footer>
+</body>
+
+</html>
